@@ -9,7 +9,7 @@ use Hackathon\Game\Result;
  * @package Hackathon\PlayerIA
  * @author FlorentD
  */
-class GhopePlayer extends Player
+class GHopePlayer extends Player
 {
     protected $mySide;
     protected $opponentSide;
