@@ -7,7 +7,7 @@ use Hackathon\Game\Result;
 /**
  * Class LovePlayer
  * @package Hackathon\PlayerIA
- * @author FlorentD
+ * @author GaetanB
  */
 class GHopePlayer extends Player
 {
@@ -47,6 +47,7 @@ class GHopePlayer extends Player
             return parent::foeChoice();
         else
             return parent::friendChoice();
+
     }
  
 };
