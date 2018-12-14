@@ -41,6 +41,10 @@ class GHopePlayer extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
 
+        $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher');
+        if (in_array($allies))
+            return $this->friendChoice();
+
         if ($this->result->getLastChoiceFor($this->mySide) == 0)
             return parent::friendChoice();
         elseif (($this->result->getLastChoiceFor($this->opponentSide) == 'foe'))
