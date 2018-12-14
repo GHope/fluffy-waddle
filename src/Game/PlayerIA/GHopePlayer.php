@@ -41,7 +41,7 @@ class GHopePlayer extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
 
-        $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher');
+        $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher', 'Galtar95');
         if (in_array($allies))
             return $this->friendChoice();
 
