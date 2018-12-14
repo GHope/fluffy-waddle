@@ -41,7 +41,7 @@ class GHopePlayer extends Player
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
 
-        $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher', 'Galtar95');
+        $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher', 'Galtar95', 'Sky555v');
         $opp_name = $this->result->getStatsFor($this->opponentSide)['name'];
 
         if (in_array($opp_name, $allies))
