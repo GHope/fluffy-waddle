@@ -42,13 +42,17 @@ class GHopePlayer extends Player
         // -------------------------------------    -----------------------------------------------------
 
         $allies = array('PacoTheGreat', 'Felixdupriez', 'Shiinsekai', 'Etienneelg', 'Benli06', 'Christaupher', 'Galtar95');
-        if (in_array($allies))
+        $opp_name = $this->result->getStatsFor($this->opponentSide)['name'];
+
+        if (in_array($opp_name, $allies))
             return $this->friendChoice();
 
         if ($this->result->getLastChoiceFor($this->mySide) == 0)
             return parent::friendChoice();
+        //I'm resentful toward my former opponent
         elseif (($this->result->getLastChoiceFor($this->opponentSide) == 'foe'))
             return parent::foeChoice();
+        //I forgive and build a relationship with my former opponent
         elseif (($this->result->getLastChoiceFor($this->opponentSide) == 'friend'))
             return parent::friendChoice();
         else
